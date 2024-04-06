@@ -1,0 +1,396 @@
+body {
+  margin: 0px;
+}
+.banner-img-container {
+  height: 60vh;
+  background-image: url("assests/main_banner_img.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.banner-text-wrapper {
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.zomato-main-text {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  margin: auto;
+}
+.zomato-text {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  margin: auto;
+}
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+  margin-top: 30px;
+}
+
+.search input {
+  height: 55px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+  border-radius: 10px;
+}
+
+.search .fa-search {
+  position: absolute;
+  opacity: 0.7;
+  top: 20px;
+  left: 16px;
+}
+
+.images-main-container {
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.img-box {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 100px;
+}
+
+.img-with-text {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.img-text {
+  padding: 10px 20px 10px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collections-text {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+  padding: 5px 20px;
+  max-width: 1200px;
+}
+
+.img-collections {
+  background-image: url("assests/popular-place.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 340px;
+  width: 290px;
+  border-radius: 8px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+.img-collections:nth-child(2) {
+  background-image: url("assests/live-cricket.avif");
+}
+.img-collections:nth-child(4) {
+  background-image: url("assests/live-cricket.avif");
+}
+
+.img-collections-text {
+  color: #fff;
+  font-size: 19px;
+  margin-left: 15px;
+}
+.img-collections-subtext {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.img-collections-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-places-text {
+  margin: 30px auto 0px auto;
+  padding: 10px;
+  max-width: 1200px;
+  font-size: 30px;
+  opacity: 0.8;
+}
+.links-places-container {
+  display: flex;
+  flex-direction: column;
+}
+.links-places-main-container {
+  border: 1px solid #d3d3d3;
+  width: 370px;
+  height: 80px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 8px;
+}
+@media (max-width: 900px) {
+  .links-places-main-container {
+    width: 80vw;
+  }
+}
+
+.links-places-main-container .fa-chevron-right {
+  margin: 10px;
+  color: #000;
+}
+
+.links-places-main-container:hover {
+  box-shadow: 2px 3px #dddada;
+}
+
+.links-places-text {
+  color: #000;
+  font-size: 20px;
+  opacity: 0.8;
+  margin-left: 15px;
+}
+.links-places-subtext {
+  color: #000;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.explore-options-text {
+  margin: 30px auto 0px auto;
+  padding: 10px;
+  max-width: 1200px;
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.accordion {
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+}
+.accordion-item {
+  padding: 8px;
+  font-size: 15px;
+  opacity: 0.7;
+  margin: 20px;
+  border-radius: 10px;
+}
+.accordion-button {
+  font-size: 20px;
+}
+.accordion-button[aria-expanded="true"] {
+  background-color: #fff;
+  color: #000;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.footer-heading {
+  margin: 30px auto 0px auto;
+  padding: 10px;
+  max-width: 1200px;
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+  .footer-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-first-element {
+  padding: 5px;
+  margin-bottom: 10px;
+  flex-basis: 70%;
+  box-sizing: border-box;
+}
+
+.footer-second-element {
+  padding: 5px;
+  margin-bottom: 10px;
+  flex-basis: 30%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.footer-heading-btn {
+  padding: 5px;
+  border: 1px solid #7e7b7b;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #fff;
+  width: 140px;
+  margin: 5px;
+}
+.footer-heading-btn-img {
+  margin: 0px 10px 5px 5px;
+}
+.footer-heading-btn .fa-chevron-down {
+  margin: 10px;
+  font-size: 10px;
+}
+
+.footer-card-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto 0px auto;
+  padding: 10px;
+}
+
+.footer-text-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+.footer-text-card-for-what {
+  display: flex;
+  flex-direction: column;
+}
+.footer-img-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  margin: 10px;
+}
+.footer-card-heading {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px 0px;
+}
+
+.footer-card-text {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 2px;
+}
+
+.social_link_img {
+  width: 140px;
+  height: 40px;
+  margin: 8px 0px;
+}
+
+.footer-card-subcontainer {
+  width: 40%;
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .footer-card-container {
+    flex-direction: column;
+  }
+  .footer-card-subcontainer {
+    width: 100%;
+  }
+  .footer-img-card {
+    display: none;
+  }
+}
+
+.footer-text {
+  opacity: 0.7;
+  font-size: 14px;
+  border-top: 1px solid #d3d3d3;
+  max-width: 1200px;
+  margin: 30px auto 0px auto;
+  padding: 20px 10px;
+}
+
+.get-zomato-main-container {
+  background-color: #f2ecec;
+  display: flex;
+  padding: 30px 0px;
+  margin: 50px 0px;
+}
+
+.get-zomato-sub-container {
+  display: flex;
+  margin: auto;
+}
+.get-zomato-img {
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+}
+.get-zomato-app-text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 40px;
+  flex-wrap: wrap;
+  width: 56%;
+}
+.form-check {
+  margin: 10px;
+}
+.form-check-input {
+  cursor: pointer;
+}
+.form-check-input:checked {
+  cursor: pointer;
+  background-color: rgb(239, 79, 95) !important;
+}
+.download_app_img {
+  width: 140px;
+  height: 40px;
+  margin: 10px 8px 8px 0px;
+}
+.share-app-link-btn {
+  width: 30%;
+  margin: 5px;
+}
+.share-btn {
+  width: 30%;
+  margin: 5px;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: rgb(239, 79, 95) !important;
+  border-color: rgb(239, 79, 95) !important;
+}
+@media (max-width: 900px) {
+  .get-zomato-img {
+    display: none;
+  }
+  .get-zomato-app-text-container {
+    width: 70%;
+    margin: auto;
+  }
+  .share-app-link-btn {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .share-btn {
+    display: none;
+  }
+}
